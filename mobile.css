@@ -1,0 +1,334 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* image editing */
+.showtime::before{
+  content: "";
+  position: fixed; /* This stays fixed while you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Keeps it behind your text */
+  will-change: transform; /* Hint to the browser for better performance */
+}
+.showtime-1::before{
+  content: "";
+  position: fixed; /* This stays fixed while you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Keeps it behind your text */
+  will-change: transform; /* Hint to the browser for better performance */
+}
+.showtime-2::before{
+  content: "";
+  position: fixed; /* This stays fixed while you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Keeps it behind your text */
+  will-change: transform; /* Hint to the browser for better performance */
+}
+/* image editing here */
+
+/* font family:'Montserrat' ,sans-serif;
+font family:'Roboto' ,sans-serif; */
+[class*=col-]{
+  width: 100%;
+}
+.container{
+  max-width: 1400px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* header start here */
+header{
+  background-color: teal;
+  text-align: center;
+  padding: 10px;
+  color: bisque;
+  font-family: 'Handlee' , cursive;
+  
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-image img{
+  width: 120px;
+  height: 120px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+.header-title{
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-family: "Playwrite NZ Basic Guides", cursive;
+  font-weight: 200;
+  font-style: italic;
+}
+.header-menu a{
+  text-decoration: none;
+  color: bisque;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  transition: 2s;
+  transition-delay: .00001s;
+}
+.header-menu{
+  margin-top: 15px;
+}
+.header-menu a:hover{
+  background-color: black;
+  transform: scale(1.2);
+}
+/* header end here */
+/* showtime start here */
+.showtime{
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+.showtime{
+  background-image: url(image/pexels-vedanti-66315-239975.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+.showtime::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.extra{
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.extra::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.showtime-1{
+  background-image: url(image/1st.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.showtime-2{
+  background-image: url(image/2nd.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.showtime-1 p{
+  text-transform: uppercase;
+  font-family:'Roboto' ,sans-serif;
+  font-weight: bolder;
+  color: azure;
+  font-size: 2rem;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 20px;
+  margin: 0 20px;
+  transition: 2s;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.showtime-1 p:hover{
+  transform: scale(1.3);
+}
+.showtime-2 p:hover{
+  transform: scale(1.3);
+}
+.showtime-2 p{
+  text-transform: uppercase;
+  font-family:'Roboto' ,sans-serif;
+  font-weight: bolder;
+  color: azure;
+  font-size: 2rem;
+  width: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 20px;
+  transition: 2s;
+}
+/* showtime ends here */
+/* about-us start here */
+.food::after{
+content: '';
+display: table;
+clear: both;
+}
+.food{
+  text-align: center;
+}
+.food-desc p{
+  text-align: justify;
+}
+.food-image{
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.food-image:hover{
+  transform: scale(1.2);
+}
+.admin img{
+  height: 160px;
+  width: 160px;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 5px;
+}
+.about-us{
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  margin: 20px auto;
+}
+.about-us::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+.about-desc{
+  margin-top: 20px;
+}
+.about-us p{
+  font-family: 'Handlee' , cursive;
+}
+hr{
+  border: 1px solid black;
+}
+.dotted-hr{
+  border: 1px dotted;
+  border-bottom: none;
+}
+/* about-us ends here */
+/* reservation here */
+.reservation{
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px;
+}
+.reservation h3{
+  font-size: 2rem;
+  font-family:'Montserrat' ,sans-serif;
+  margin: 10px auto;
+}
+.reservation p{
+  font-family:'Roboto' ,sans-serif;
+  font-style: italic;
+  margin: 10px auto;
+}
+.food-button{
+  margin: 20px auto;
+}
+.food-button button{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: antiquewhite;
+}
+.food-button button a{
+  padding: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+/* reservation here */
+/* food section here */
+.food-1::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+.location{
+  margin: 20px auto;
+  padding: 20px;
+}
+.location::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+/* food section here */
+/* footer design here */
+.footer-part{
+  background-color: black;
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+.footer-part::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+.foot-1 a{
+  text-decoration: none;
+  color: aliceblue;
+  margin:5px 10px;
+}
+.foot-1::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.foot-2::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.foot-1 a:hover{
+  text-decoration: underline;
+  background-color: thistle;
+  color: black;
+}
+.foot-2 p{
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  margin: 5px 10px;
+}
+/* footer design here */
+.location{
+  margin-bottom: 10px;
+}
